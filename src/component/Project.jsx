@@ -32,7 +32,7 @@ const Project = ({ projectRef }) => {
           colRvr={"flex-col"}
           num={1}
           projTitle="Docintosh"
-          projImg="../src/assets/web.png"
+          projImg="src/assets/web.png"
           projLink="https://docintosh.com/HomeController/index2"
           projDes="Docintosh is a web application designed for medical students and doctors to engage in various interactive activities, such as surveys, polls, and quizzes. Utilizing HTML, CSS, Bootstrap, and JavaScript, this project delivers a visually appealing and user-friendly experience on a wide range of devices."
           proLan={["html", "css", "js", "Bootstrap", " JavaScript", " JQuery"]}
