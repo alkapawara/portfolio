@@ -25,7 +25,14 @@ const Docintosh = () => {
                 <span className='text-textGreen mt-1'>
                 <IoIosShareAlt />
                 </span>
-                Built fully responsive websites, enhancing user experience across various devices.
+                Worked on tablet-based doctor campaigns, improving performance and usability on mobile devices.
+            </li>
+            <li className='text-base flex gap-2 text-textDark'>
+                <span className='text-textGreen mt-1'>
+                <IoIosShareAlt />
+                </span>
+                Designed and developed HTML email templates using Mailchimp for
+                campaigns, including special events
             </li>
             <li className='text-base flex gap-2 text-textDark'>
                 <span className='text-textGreen mt-1'>

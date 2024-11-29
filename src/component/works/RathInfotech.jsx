@@ -25,7 +25,9 @@ const RathInfotech = () => {
                 <span className='text-textGreen mt-1'>
                 <IoIosShareAlt />
                 </span>
-                 Worked on tablet-based doctor campaigns, improving performance and usability on mobile devices.
+                Optimized SEO pages to improve website performance and search
+engine rankings.
+                
             </li>
             
         </ul>
