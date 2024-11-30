@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import imageData from "../imageData";
 const About = () => {
   const parentScrollElement = useRef(null);
 
@@ -45,7 +46,7 @@ const About = () => {
           
         className="w-full lgl:w-1/3 h-80 relative group ">
           <img
-            src="./src/assets/alka-photo.jpg"
+            src={imageData.profileImg}
             className=" h-[100%] object-fill w-full border-textGreen bg-slate-300 p-1 z-40 absolute  "
           />
           <div className=" absolute top-12 left-12 -translate-x-50 -translate-y-50 hidden lgl:inline-flex w-[95%] h-[98%] border-4 border-slate-800 bg-slate-900/20"></div>
