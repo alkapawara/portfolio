@@ -22,7 +22,7 @@ section#project {
     -webkit-text-stroke-color: transparent;
 }
 .keyskillBox{
-   background-image: url(./src/assets/img/footer-grid.svg); 
+   background-image: url(../src/assets/img/footer-grid.svg); 
   background-position: center;
      /* margin-top: -30px;  */
     display: grid;

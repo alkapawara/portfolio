@@ -43,11 +43,11 @@ const Project = ({ projectRef }) => {
           colRvr={"flex-col-reverse"}
           num={2}
           projTitle="Ecommerce"
-          projImg="../src/assets/ecommerce.png"
+          projImg="assets/ecommerce.png"
           gitCodeurl="https://github.com/alkapawara/shoppingCart"
           projLink="https://shopping-cart-kappa-plum.vercel.app/"
           projDes="The e-commerce website allows users to browse products, view detailed information, add items to their shopping cart, and save products to a wishlist. It provides a seamless shopping experience with features like product previews, quantity selection, and easy checkout. The website also enables users to manage their wishlist, making it easier."
-          proLan={["React", "CSS", "Tailwind", ]}
+          proLan={["React", "CSS", "Tailwind"]}
         />
 
         {showmore && (
@@ -58,7 +58,7 @@ const Project = ({ projectRef }) => {
               colRvr={"flex-col"}
               num={3}
               projTitle="BrandCare"
-              projImg="../src/assets/brandcare.png"
+              projImg="./src/assets/brandcare.png"
               projLink="https://www.brandcare.net/"
               projDes="Brandcare specializes in simplifying science for pharma, health, and wellness brands. They craft impactful campaigns, creative strategies, and engaging health communications to connect brands with their audience effectively."
               proLan={[
@@ -76,7 +76,7 @@ const Project = ({ projectRef }) => {
               colRvr={"flex-col-reverse"}
               num={4}
               projTitle="Prasadam"
-              projImg="../src/assets/prasadam.png"
+              projImg="src/assets/prasadam.png"
               projLink="https://www.pingalegroup.com/Prasadam"
               projDes="The Prasadam Bhojnalay project is a subscription-based food service website. Users can select meals, including a limited thali meal or specialty thalis, add them to their cart, and complete the checkout process."
               proLan={[
@@ -89,23 +89,18 @@ const Project = ({ projectRef }) => {
               ]}
             />
 
-        <ProjectBox
+            <ProjectBox
               rowDir="lg:flex-row"
               colRvr={"flex-col"}
               num={5}
               projTitle="Todo List"
               gitCodeurl="https://github.com/alkapawara/todo-grocery-list"
-              projImg="../src/assets/todo-list.png"
+              projImg="./src/assets/todo-list.png"
               projLink="https://todo-grocery-list-nu.vercel.app/"
               projDes="A Dodo List is a task management application built using React.js, designed to help users organize, track, and prioritize their daily tasks seamlessly. Leveraging React's component-based architecture, the application provides a dynamic and interactive user experience"
-              proLan={[
-                "React",
-                "css",
-                "Tailwind",
-               
-              ]}
+              proLan={["React", "css", "Tailwind"]}
             />
-        <ProjectBox
+            <ProjectBox
               rowDir="lg:flex-row-reverse"
               colRvr={"flex-col-reverse"}
               num={6}
