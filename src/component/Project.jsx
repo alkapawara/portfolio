@@ -1,9 +1,8 @@
 import React, { useState, useRef } from "react";
 import SectionTitle from "./SectionTitle";
-import { FaGithub } from "react-icons/fa";
-import { RiShareForward2Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import ProjectBox from "./ProjectBox";
+import imageData from "../imageData";
 const Project = ({ projectRef }) => {
   const [showmore, setShowmore] = useState(false);
   const parentScrollElement = useRef(null);
@@ -32,7 +31,7 @@ const Project = ({ projectRef }) => {
           colRvr={"flex-col"}
           num={1}
           projTitle="Docintosh"
-          projImg="../src/assets/web.png"
+          projImg={imageData.docintosh}
           projLink="https://docintosh.com/HomeController/index2"
           projDes="Docintosh is a web application designed for medical students and doctors to engage in various interactive activities, such as surveys, polls, and quizzes. Utilizing HTML, CSS, Bootstrap, and JavaScript, this project delivers a visually appealing and user-friendly experience on a wide range of devices."
           proLan={["html", "css", "js", "Bootstrap", " JavaScript", " JQuery"]}
@@ -43,7 +42,7 @@ const Project = ({ projectRef }) => {
           colRvr={"flex-col-reverse"}
           num={2}
           projTitle="Ecommerce"
-          projImg="assets/ecommerce.png"
+          projImg={imageData.ecommerce}
           gitCodeurl="https://github.com/alkapawara/shoppingCart"
           projLink="https://shopping-cart-kappa-plum.vercel.app/"
           projDes="The e-commerce website allows users to browse products, view detailed information, add items to their shopping cart, and save products to a wishlist. It provides a seamless shopping experience with features like product previews, quantity selection, and easy checkout. The website also enables users to manage their wishlist, making it easier."
@@ -58,7 +57,7 @@ const Project = ({ projectRef }) => {
               colRvr={"flex-col"}
               num={3}
               projTitle="BrandCare"
-              projImg="./src/assets/brandcare.png"
+              projImg={imageData.brandcare}
               projLink="https://www.brandcare.net/"
               projDes="Brandcare specializes in simplifying science for pharma, health, and wellness brands. They craft impactful campaigns, creative strategies, and engaging health communications to connect brands with their audience effectively."
               proLan={[
@@ -76,7 +75,7 @@ const Project = ({ projectRef }) => {
               colRvr={"flex-col-reverse"}
               num={4}
               projTitle="Prasadam"
-              projImg="src/assets/prasadam.png"
+              projImg={imageData.prasadam}
               projLink="https://www.pingalegroup.com/Prasadam"
               projDes="The Prasadam Bhojnalay project is a subscription-based food service website. Users can select meals, including a limited thali meal or specialty thalis, add them to their cart, and complete the checkout process."
               proLan={[
@@ -95,7 +94,7 @@ const Project = ({ projectRef }) => {
               num={5}
               projTitle="Todo List"
               gitCodeurl="https://github.com/alkapawara/todo-grocery-list"
-              projImg="./src/assets/todo-list.png"
+              projImg={imageData.todolist}
               projLink="https://todo-grocery-list-nu.vercel.app/"
               projDes="A Dodo List is a task management application built using React.js, designed to help users organize, track, and prioritize their daily tasks seamlessly. Leveraging React's component-based architecture, the application provides a dynamic and interactive user experience"
               proLan={["React", "css", "Tailwind"]}
@@ -105,7 +104,7 @@ const Project = ({ projectRef }) => {
               colRvr={"flex-col-reverse"}
               num={6}
               projTitle="Keshawshusthi"
-              projImg="../src/assets/keshawshrusthi.png"
+              projImg={imageData.keshawshrusthi}
               projLink="https://gramswasthyayojna.com/"
               projDes="focuses on gathering data about the health conditions of villages and families based on predefined health criteria. It is part of a larger initiative to assess and improve the overall health and wellbeing of rural communities, promoting self-reliance and better health management systems"
               proLan={[
