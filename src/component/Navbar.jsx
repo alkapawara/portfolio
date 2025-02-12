@@ -4,10 +4,18 @@ import { div } from "framer-motion/client";
 import { TbBrandGithub } from "react-icons/tb";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoWhatsapp } from "react-icons/bi";
-const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle, setToggle }) => {
+const Navbar = ({
+  homeRef,
+  aboutRef,
+  experienceRef,
+  projectRef,
+  contactRef,
+  toggle,
+  setToggle,
+}) => {
   const [activeSection, setActiveSection] = useState("home");
   const [showmenu, setShowmenu] = useState(false);
- 
+
   const handleScroll = (ref, section) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -16,15 +24,27 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
   };
 
   return (
-    <div className={`w-full  top-0 sticky z-50 px-4 h-20 lg:h-[12vh] ${toggle ? "  bg-slate-50 shadow" :"bg-bodyColor shadow-navShadow"}`}>
+    <div
+      className={`w-full  top-0 sticky z-50 px-4 h-20 lg:h-[12vh] ${
+        toggle ? "  bg-slate-50 shadow" : "bg-bodyColor shadow-navShadow"
+      }`}
+    >
       <div className="flex justify-between items-center max-w-container h-full py-1 font-tittleFont mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <a href="#home" className={`font-black ${toggle?"text-sky-900":"text-textGreen"} text-xl`}>
-            Alka<span className={toggle?"text-teal-500":"text-white"}>Pawara</span>
+          <a
+            href="#home"
+            className={`font-black ${
+              toggle ? "text-sky-900" : "text-textGreen"
+            } text-xl`}
+          >
+            Alka
+            <span className={toggle ? "text-teal-500" : "text-white"}>
+              Pawara
+            </span>
           </a>
         </motion.div>
         <div className="hidden mdl:inline-flex gap-7 items-center">
@@ -32,7 +52,13 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
             <a
               href="#home"
               className={`flex items-center gap-1 font-bold 
-                ${toggle ? "text-sky-900" : activeSection === "home" ? "text-textGreen" : "text-textDark"}
+                ${
+                  toggle
+                    ? "text-sky-900"
+                    : activeSection === "home"
+                    ? "text-textGreen"
+                    : "text-textDark"
+                }
               } hover:text-textGreen cursor-pointer duration-300 `}
               onClick={() => handleScroll(homeRef, "home")}
             >
@@ -46,7 +72,13 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
             </a>
             <a
               href="#about"
-              className={`flex items-center gap-1 font-bold ${toggle ? "text-sky-900" : activeSection === "about" ? "text-textGreen" : "text-textDark"} hover:text-textGreen cursor-pointer duration-300`}
+              className={`flex items-center gap-1 font-bold ${
+                toggle
+                  ? "text-sky-900"
+                  : activeSection === "about"
+                  ? "text-textGreen"
+                  : "text-textDark"
+              } hover:text-textGreen cursor-pointer duration-300`}
               onClick={() => handleScroll(aboutRef, "about")}
             >
               <motion.li
@@ -60,7 +92,13 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
             <a
               href="#workExperience"
               className={`flex items-center gap-1 font-bold 
-                ${toggle ? "text-sky-900" : activeSection === "workExperience" ? "text-textGreen" : "text-textDark"} hover:text-textGreen cursor-pointer duration-300`}
+                ${
+                  toggle
+                    ? "text-sky-900"
+                    : activeSection === "workExperience"
+                    ? "text-textGreen"
+                    : "text-textDark"
+                } hover:text-textGreen cursor-pointer duration-300`}
               onClick={() => handleScroll(experienceRef, "workExperience")}
             >
               <motion.li
@@ -74,7 +112,13 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
             <a
               href="#project"
               className={`flex items-center gap-1 font-bold 
-                ${toggle ? "text-sky-900" : activeSection === "project" ? "text-textGreen" : "text-textDark"}
+                ${
+                  toggle
+                    ? "text-sky-900"
+                    : activeSection === "project"
+                    ? "text-textGreen"
+                    : "text-textDark"
+                }
                  hover:text-textGreen cursor-pointer duration-300`}
               onClick={() => handleScroll(projectRef, "project")}
             >
@@ -88,7 +132,13 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
             </a>
             <a
               href="#contact"
-              className={`flex items-center gap-1 font-bold ${toggle ? "text-sky-900" : activeSection === "contact" ? "text-textGreen" : "text-textDark"} hover:text-textGreen cursor-pointer duration-300`}
+              className={`flex items-center gap-1 font-bold ${
+                toggle
+                  ? "text-sky-900"
+                  : activeSection === "contact"
+                  ? "text-textGreen"
+                  : "text-textDark"
+              } hover:text-textGreen cursor-pointer duration-300`}
               onClick={() => handleScroll(contactRef, "contact")}
             >
               <motion.li
@@ -199,15 +249,12 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
                   rel="noopener noreferrer"
                 >
                   <button
-                   
                     transition={{ duration: 0.1, delay: 0.5 }}
                     className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-linl border py-1 px-4 border-textGreen hover:bg-hoverColor"
                   >
                     Resume
                   </button>
                 </a>
-
-               
               </ul>
 
               <div className="w-full flex flex-row items-center justify-center gap-4 text-textLight mt-4">
@@ -237,12 +284,14 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
                   </a>
                 </div>
               </div>
-              <div className=' w-full flex flex-col items-center justify-end gap-16 text-textLight'>
-          <a href="mailto:alkapawara749@gmail.com" target='_blank'>
-            <p className='text-sm mt-4 tracking-wide text-textGreen'> alkapawara749@gmail.com</p>
-        </a>
-      
-    </div>
+              <div className=" w-full flex flex-col items-center justify-end gap-16 text-textLight">
+                <a href="mailto:alkapawara749@gmail.com" target="_blank">
+                  <p className="text-sm mt-4 tracking-wide text-textGreen">
+                    {" "}
+                    alkapawara749@gmail.com
+                  </p>
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
