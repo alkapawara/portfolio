@@ -10,7 +10,8 @@ const RathInfotech = () => {
     className='w-full'
     >
         
-        <h3 className='flex gap-1 font-medium text-xl font-titleFont'>Web Designer <span className='text-textGreen tracking-wide'>
+        <h3 className='flex gap-1 font-medium text-xl font-titleFont'>HTML Developer
+        <span className='text-textGreen tracking-wide'>
         @Rath Infotech
                 </span></h3>
         <p className='text-sm mt-1 font-medium text-textDark'>Mumbai: January 2020 - December 2020</p>

@@ -101,7 +101,7 @@ const Navbar = ({ homeRef, aboutRef, experienceRef, projectRef,contactRef,toggle
             </a>
           </ul>
           <a
-            href="src/assets/alka_frontend_devloper_cv.pdf"
+            href="src/assets/alka-pawara-fontend-devloper-resume-2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
