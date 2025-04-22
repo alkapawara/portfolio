@@ -151,7 +151,7 @@ const Navbar = ({
             </a>
           </ul>
           <a
-            href="/alka-pawara-frontend-devloper-resume-2025.pdf"
+            href="/Alka-Pawara-Frontend-Devloper-Resume325.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -244,7 +244,7 @@ const Navbar = ({
                 </a>
 
                 <a
-                  href="/alka-pawara-frontend-devloper-resume-2025.pdf"
+                  href="/Alka-Pawara-Frontend-Devloper-Resume325.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
