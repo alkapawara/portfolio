@@ -31,7 +31,7 @@ const About = () => {
 
         className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-          Hello! My name is Alka Pawara and I am a Front-End Developer with over 3 years of experience in website design, <span className="text-textGreen">specializing in HTML, CSS, JavaScript, and WordPress.</span>  I have successfully converted complex PSD designs into high-quality HTML code, ensuring cross-browser compatibility and building fully responsive websites that enhance user experience across devices.
+          Hello! My name is Alka Pawara and I am a Front-End Developer with over 3 years of experience as UI Developer, <span className="text-textGreen">specializing in HTML, CSS, JavaScript, and WordPress.</span>  I have successfully converted complex PSD designs into high-quality HTML code, ensuring cross-browser compatibility and building fully responsive websites that enhance user experience across devices.
           </p>
           <p>
           <span className="text-textGreen">Having completed a React course,</span>  I am now seeking an entry-level React.js Developer position to further develop my skills in modern frameworks. 
