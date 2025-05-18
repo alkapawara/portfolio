@@ -244,7 +244,7 @@ const Navbar = ({
                 </a>
 
                 <a
-                  href="/Alka-Pawara-Frontend-Devloper-Resume325.pdf"
+                  href="/Alka-Pawara-Frontend-Devloper-Resume5.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
