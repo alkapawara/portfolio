@@ -40,10 +40,11 @@ section#project {
 }
   /* New color changing animation */
 @keyframes colorChange {
-  0%   { background: #9333ea; }
-  33%  { background: #e8b208; } 
-  66%  { background: #64ffda; } 
-  100% { background: #020617; } /* Back to dark blue */
+  0%   { background: #020617; }  /* Almost black */
+  25%  { background: #0a192f; }  /* Navy blue */
+  50%  { background: #9333ea; }  /* Purple */
+  75%  { background: #e8b208; }  /* Yellow */
+  100% { background: #020617; }  /* Back to almost black */
 }
   .items {
     --width: 60px;
