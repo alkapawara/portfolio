@@ -40,10 +40,10 @@ section#project {
 }
   /* New color changing animation */
 @keyframes colorChange {
-  0%   { background: #0c1f2a; } /* Dark blue */
-  33%  { background: #ff4d4d; } /* Red */
-  66%  { background: #4dff4d; } /* Green */
-  100% { background: #0c1f2a; } /* Back to dark blue */
+  0%   { background: #9333ea; }
+  33%  { background: #e8b208; } 
+  66%  { background: #64ffda; } 
+  100% { background: #020617; } /* Back to dark blue */
 }
   .items {
     --width: 60px;
