@@ -31,15 +31,21 @@ section#project {
 
 
 .parent {
-    position: relative;
-    width: 100px;
-    aspect-ratio: 1;
-    background: #0c1f2a;
-    border-radius: 50%;
-    animation: rotate 60s linear infinite;
-    
-  }
-  
+  position: relative;
+  width: 100px;
+  aspect-ratio: 1;
+  background: #0c1f2a;
+  border-radius: 50%;
+  animation: rotate 60s linear infinite, colorChange 6s linear infinite;
+}
+  /* New color changing animation */
+@keyframes colorChange {
+  0%   { background: #020617; }  /* Almost black */
+  25%  { background: #0a192f; }  /* Navy blue */
+  50%  { background: #9333ea; }  /* Purple */
+  75%  { background: #e8b208; }  /* Yellow */
+  100% { background: #020617; }  /* Back to almost black */
+}
   .items {
     --width: 60px;
     --distance: 200px;
@@ -57,6 +63,12 @@ section#project {
     transform: translate(calc(cos(var(--move)) * var(--distance)), calc(sin(var(--move)) * var(--distance)));
     animation: move 60s linear infinite;
   }
+.items:hover {
+    background: #d0c4db;
+    scale: 1.2;
+    transition: scale .4s;
+    cursor: pointer;
+}
   .items:nth-of-type(1) {
     --move: 40deg;
   }
